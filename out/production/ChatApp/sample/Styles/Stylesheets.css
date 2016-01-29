@@ -1,0 +1,12 @@
+.sharpEdge{
+	-fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+}
+
+#chatArea{
+	-fx-background-color: gray;
+}
+
+#chatArea:focused{
+	-fx-background-color: gray;
+}
