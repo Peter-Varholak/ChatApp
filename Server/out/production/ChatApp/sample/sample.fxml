@@ -13,10 +13,10 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="Connection">
+          <Menu mnemonicParsing="false" text="Server">
             <items>
-              <MenuItem id="menu1" mnemonicParsing="false" text="Host" />
-                  <MenuItem id="menu2" mnemonicParsing="false" text="Connect" />
+              <MenuItem id="menu1" fx:id="menu1" mnemonicParsing="false" text="Start" />
+                <MenuItem id="menu2" fx:id="menu2" mnemonicParsing="false" text="Stop" visible="false" />
             </items>
           </Menu>
         </menus>
@@ -25,7 +25,7 @@
    <bottom>
       <HBox BorderPane.alignment="CENTER">
          <children>
-            <Label id="status" fx:id="status" text="Status">
+            <Label id="status" fx:id="status" text="Server offline">
                <padding>
                   <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
                </padding>
@@ -36,14 +36,14 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
-            <TextArea id="chatArea" editable="false" styleClass="sharpEdge" stylesheets="@Styles/Stylesheets.css" VBox.vgrow="ALWAYS">
+            <TextArea id="chatArea" fx:id="chatArea" editable="false" styleClass="sharpEdge" stylesheets="@Styles/Stylesheets.css" wrapText="true" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets bottom="3.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextArea>
             <HBox spacing="10.0">
                <children>
-                  <TextField id="chatInput" styleClass="sharpEdge" stylesheets="@Styles/Stylesheets.css" HBox.hgrow="ALWAYS" />
+                  <TextField id="chatInput" fx:id="chatInput" styleClass="sharpEdge" stylesheets="@Styles/Stylesheets.css" HBox.hgrow="ALWAYS" />
                   <Button id="sendButton" fx:id="sendButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Send" />
                </children>
                <padding>
